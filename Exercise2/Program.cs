@@ -3,7 +3,7 @@ namespace Exercise2
 {
     class Program
     {
-        int[] arr = new int[];
+        int[] arr = new int[20];
         int n;
         int i;
 
