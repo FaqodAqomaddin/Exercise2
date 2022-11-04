@@ -3,7 +3,7 @@ namespace Exercise2
 {
     class Program
     {
-        int[] arr = new int[20];
+        int[] faq = new int[20];
         int n;
         int i;
 
@@ -27,7 +27,7 @@ namespace Exercise2
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
-                arr[i] = Int32.Parse(s1);
+                faq[i] = Int32.Parse(s1);
             }
         }
         static void sort(int[] arr)
