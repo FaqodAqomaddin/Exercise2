@@ -109,5 +109,44 @@ namespace Exercise2
                 merge(arr, l, m, r);
             }
         }
+        static void Main(string[] args)
+        {
+            Program myList = new Program();
+            int pilihanmenu;
+            char ch;
+
+            Console.WriteLine("Menu Option");
+            Console.WriteLine("===============");
+            Console.WriteLine("1.Linear Search");
+            Console.WriteLine("2.Binary search");
+            Console.WriteLine("3.Exit");
+            Console.Write("Enter your choice (1,2,3) : ");
+            pilihanmenu = Convert.ToInt32(Console.ReadLine());
+            switch (pilihanmenu)
+            {
+                case 1:
+                    Console.WriteLine("");
+                    Console.WriteLine("-----------------");
+                    Console.WriteLine("Sort");
+                    Console.WriteLine("-----------------");
+                    myList.input();
+                    myList.sort();
+                    break;
+                case 2:
+                    Console.WriteLine("");
+                    Console.WriteLine("-----------------");
+                    Console.WriteLine("Merge");
+                    Console.WriteLine("-----------------");
+                    myList.input();
+                    myList.merge();
+                    break;
+                case 3:
+                    Console.WriteLine("exit.");
+                    break;
+                default:
+                    Console.WriteLine("error");
+                    break;
+            }
+        }
     }
 }
